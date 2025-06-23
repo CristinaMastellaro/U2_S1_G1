@@ -283,6 +283,12 @@ footer a {
         margin: 1em;
     }
     
+/* io ho fatto con vertical align: middle ma per farlo ho trovato che bisogna avere un altezza fissa sull'header
+e oltre all'altezza ho letto anche line-height da mettere sempre uguale all'altezza 
+
+Un'altra persona:
+e oltre all'altezza ho letto anche line-height da mettere sempre uguale all'altezza */
+
     header div p {
         display: inline;
         vertical-align: 2.2em;
@@ -311,16 +317,12 @@ footer a {
         margin-top: 0.5em;
     }
 
-    main ul li {
+    main ul li, main ol li {
         margin-top: 0.7em;
     }
 
     main h2 {
         margin-top: 2.5em;
-    }
-
-    main ol li {
-        margin-top: 0.7em;
     }
 
     main iframe {
@@ -366,13 +368,9 @@ footer a {
     
     /* Header & Footer */
 
-    header {
+    header, footer, iframe, section, aside {
         display: none;
-    }
-
-    footer {
-        display: none;
-    }
+    }ì
 
     /* Main */
 
@@ -397,27 +395,11 @@ footer a {
         display: block;
     }
 
-    /* main article div+p {
-        display: inline; 
-    }  */
-
     main article div+p+p {
         margin-top: 2em;
     }
 
     table thead th {
         color: black;
-    }
-
-    iframe {
-        display: none;
-    }
-
-    section {
-        display: none;
-    }
-
-    aside {
-        display: none;
     }
 }
