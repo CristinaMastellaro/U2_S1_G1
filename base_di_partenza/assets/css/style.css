@@ -325,6 +325,8 @@ e oltre all'altezza ho letto anche line-height da mettere sempre uguale all'alte
         margin-top: 2.5em;
     }
 
+
+    /* Quello spazietto bianco che ho risolto con float, in realtà è il risultato degli a capo tra i div; bisogna mettere proprio tutto sulla stessa riga, anche le cose dentro i div. L'avevo letto, ma che rottura di scatole. Sennò Stefano parla anche di margini negativi... We, sarebbe da provare. Beh, due scatole. */
     main iframe {
         float:left;
         width: 50%;
@@ -382,6 +384,8 @@ e oltre all'altezza ho letto anche line-height da mettere sempre uguale all'alte
     h1 {
         font-size: 1.5em;
     }
+
+    /* Teoricamente bastava mettere float e display block... Da piangere. Vabbè */
 
     main article p+div {
         float: left;
