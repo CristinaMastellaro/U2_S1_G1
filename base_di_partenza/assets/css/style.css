@@ -357,3 +357,67 @@ footer a {
     }
 
 }
+
+@media print {
+    
+    body {
+        background-image: none;
+    }
+    
+    /* Header & Footer */
+
+    header {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    /* Main */
+
+    main {
+        box-shadow: none;
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    main article p+div {
+        float: left;
+        margin-right: 0.5em;
+        width: 3em;
+        height: 3em;
+    }
+
+    main div img {
+        width: 100%;
+        display: block;
+    }
+
+    /* main article div+p {
+        display: inline; 
+    }  */
+
+    main article div+p+p {
+        margin-top: 2em;
+    }
+
+    table thead th {
+        color: black;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    section {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+}
